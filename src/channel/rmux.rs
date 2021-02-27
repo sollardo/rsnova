@@ -9,13 +9,10 @@ use crate::utils::{
     http_proxy_connect, make_io_error, AsyncTcpStream, AsyncTokioIO, WebsocketReader,
     WebsocketWriter,
 };
-//use crate::utils::make_io_error;
 use async_tls::TlsConnector;
-use bytes::BytesMut;
 use futures::StreamExt;
-use std::error::Error;
 use std::io::ErrorKind;
-use tokio::io::{AsyncBufRead, AsyncRead, AsyncWrite, AsyncWriteExt};
+use tokio::io::{AsyncBufRead, AsyncWrite, AsyncWriteExt};
 use tokio::net::TcpStream;
 use url::Url;
 
