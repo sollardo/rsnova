@@ -45,7 +45,7 @@ impl Header {
         (self.flag_len & 0xFF) as u8
     }
     pub fn len(&self) -> u32 {
-        (self.flag_len >> 8)
+        
     }
     #[allow(dead_code)]
     pub fn set_len(&mut self, v: u32) {
